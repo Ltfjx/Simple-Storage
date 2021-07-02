@@ -19,7 +19,7 @@ public final class GuiItems {
     public static CustomItem menuBackground() {
         return new CustomItem(
                 Material.GRAY_STAINED_GLASS_PANE,
-                Theme.PASSIVE + "簡單!",
+                Theme.PASSIVE + "简单!",
                 ""
         );
     }
@@ -27,9 +27,9 @@ public final class GuiItems {
     public static CustomItem menuInfo() {
         return new CustomItem(
                 SkullItem.fromBase64(Skulls.GUI_NO1),
-                Theme.GUI_HEAD + "資訊",
+                Theme.GUI_HEAD + "信息",
                 "",
-                "頁數 : 1"
+                "页数 : 1"
         );
     }
 
@@ -38,7 +38,7 @@ public final class GuiItems {
                 SkullItem.fromBase64(Skulls.GUI_BACK),
                 Theme.GUI_HEAD + "返回",
                 "",
-                Theme.CLICK_INFO + "點擊以返回頁面."
+                Theme.CLICK_INFO + "点击以返回页面."
         );
     }
 
@@ -47,45 +47,45 @@ public final class GuiItems {
                 SkullItem.fromBase64(Skulls.GUI_FORWARD),
                 Theme.GUI_HEAD + "向前",
                 "",
-                Theme.CLICK_INFO + "點擊以向前頁面."
+                Theme.CLICK_INFO + "点击以向前页面."
         );
     }
 
     public static CustomItem menuChestDummy() {
         return new CustomItem(
                 Material.LIGHT_GRAY_STAINED_GLASS_PANE,
-                Theme.PASSIVE + "沒有物品在這"
+                Theme.PASSIVE + "没有物品在这"
         );
     }
 
     public static CustomItem menuMasterDummy() {
         return new CustomItem(
                 Material.LIGHT_GRAY_STAINED_GLASS_PANE,
-                Theme.PASSIVE + "沒有物品欄在這"
+                Theme.PASSIVE + "没有物品栏在这"
         );
     }
 
     public static CustomItem menuClose() {
         return new CustomItem(
                 SkullItem.fromBase64(Skulls.GUI_CLOSE),
-                Theme.GUI_HEAD + "關閉"
+                Theme.GUI_HEAD + "关闭"
         );
     }
 
     public static CustomItem menuRenameCell() {
         return new CustomItem(
                 SkullItem.fromBase64(Skulls.GUI_RENAME_CELL),
-                Theme.GUI_HEAD + "重新命名單元"
+                Theme.GUI_HEAD + "重新命名单元"
         );
     }
 
     public static CustomItem menuSetMaterial() {
         return new CustomItem(
                 SkullItem.fromBase64(Skulls.GUI_SET_ICON),
-                Theme.GUI_HEAD + "設置圖標",
+                Theme.GUI_HEAD + "设置图标",
                 "",
-                Theme.ITEM_TYPEDESC + "用鼠標上的一個物品點擊",
-                Theme.ITEM_TYPEDESC + "它來設置這個物品欄的圖標"
+                Theme.ITEM_TYPEDESC + "用鼠标上的一个物品点击",
+                Theme.ITEM_TYPEDESC + "它来设置这个物品栏的图标"
         );
     }
 
@@ -95,7 +95,7 @@ public final class GuiItems {
         String name;
         String storedName = ne.getDisplayName();
         if (storedName == null) {
-            name = ChatColor.WHITE + "掃描物品欄";
+            name = ChatColor.WHITE + "扫描物品栏";
         } else {
             name = storedName;
         }
@@ -117,37 +117,37 @@ public final class GuiItems {
                 i,
                 Theme.GUI_HEAD + name,
                 "",
-                Theme.ITEM_TYPEDESC + "物品欄類型: " + NetworkElement.networkElementTypeName(NetworkElement.NetworkElementType.INVENTORY_CELL),
+                Theme.ITEM_TYPEDESC + "物品栏类型: " + NetworkElement.networkElementTypeName(NetworkElement.NetworkElementType.INVENTORY_CELL),
                 "",
-                Theme.CLICK_INFO + "左鍵: " + ChatColor.WHITE + "打開物品欄",
-                Theme.CLICK_INFO + "右鍵: " + ChatColor.WHITE + "高亮物品欄"
+                Theme.CLICK_INFO + "左键: " + ChatColor.WHITE + "打开物品栏",
+                Theme.CLICK_INFO + "右键: " + ChatColor.WHITE + "高亮物品栏"
         );
     }
 
     public static CustomItem menuCellBarrel(ItemStack i, String name, NetworkElement networkElement) {
-        String barrelAmount = Theme.ITEM_TYPEDESC + "內容: " + ChatColor.WHITE + networkElement.getBarrelAmount();
+        String barrelAmount = Theme.ITEM_TYPEDESC + "内容: " + ChatColor.WHITE + networkElement.getBarrelAmount();
         return new CustomItem(
                 i,
                 Theme.GUI_HEAD + name,
                 "",
-                Theme.ITEM_TYPEDESC + "物品欄類型: " + NetworkElement.networkElementTypeName(networkElement.getType()),
+                Theme.ITEM_TYPEDESC + "物品栏类型: " + NetworkElement.networkElementTypeName(networkElement.getType()),
                 "",
                 barrelAmount,
                 "",
-                Theme.CLICK_INFO + "左鍵: " + ChatColor.WHITE + "打開物品欄",
-                Theme.CLICK_INFO + "右鍵: " + ChatColor.WHITE + "高亮物品欄"
+                Theme.CLICK_INFO + "左键: " + ChatColor.WHITE + "打开物品栏",
+                Theme.CLICK_INFO + "右键: " + ChatColor.WHITE + "高亮物品栏"
         );
     }
 
     public static CustomItem menuCellError() {
         return new CustomItem(
                 Material.BARRIER,
-                Theme.GUI_HEAD + "掃描物品欄 (錯誤)",
+                Theme.GUI_HEAD + "扫描物品栏 (错误)",
                 "",
-                Theme.ITEM_TYPEDESC + "物品欄類型: 未知/錯誤",
+                Theme.ITEM_TYPEDESC + "物品栏类型: 未知/错误",
                 "",
-                Theme.CLICK_INFO + "左鍵: " + ChatColor.WHITE + "打開物品欄",
-                Theme.CLICK_INFO + "右鍵: " + ChatColor.WHITE + "高亮物品欄"
+                Theme.CLICK_INFO + "左键: " + ChatColor.WHITE + "打开物品栏",
+                Theme.CLICK_INFO + "右键: " + ChatColor.WHITE + "高亮物品栏"
         );
     }
 

@@ -18,31 +18,31 @@ public final class Categories {
     public static CustomItem catSimpleStorageMain() {
         return new CustomItem(
                 SkullItem.fromBase64(Skulls.CAT_CORE),
-                Theme.MAIN + "簡單儲存"
+                Theme.MAIN + "简单储存"
         );
     }
     public static CustomItem catSimpleStorageMaterials() {
         return new CustomItem(
                 SkullItem.fromBase64(Skulls.CAT_MATERIALS),
-                Theme.MAIN + "簡單儲存材料"
+                Theme.MAIN + "简单储存材料"
         );
     }
     public static CustomItem catSimpleStorageItems() {
         return new CustomItem(
                 SkullItem.fromBase64(Skulls.CAT_ITEMS),
-                Theme.MAIN + "簡單儲存物品"
+                Theme.MAIN + "简单储存物品"
         );
     }
     public static CustomItem catSimpleStorageMachines() {
         return new CustomItem(
                 SkullItem.fromBase64(Skulls.CAT_MACHINES),
-                Theme.MAIN + "簡單儲存機器"
+                Theme.MAIN + "简单储存机器"
         );
     }
     public static CustomItem catSimpleStorageChests() {
         return new CustomItem(
                 SkullItem.fromBase64(Skulls.CAT_CHESTS),
-                Theme.MAIN + "簡單儲存儲物箱/單元"
+                Theme.MAIN + "简单储存储物箱/单元"
         );
     }
 

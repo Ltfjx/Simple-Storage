@@ -19,11 +19,11 @@ public final class RareDropRedstone {
     public static final SlimefunItemStack STACK = new SlimefunItemStack(
             "MECHANIC_DROP_REDSTONE",
             Material.REDSTONE_ORE,
-            Theme.ITEM_RARE_DROP + "稀有掉落: 紅石",
+            Theme.ITEM_RARE_DROP + "稀有掉落: 红石",
             "",
             Theme.PASSIVE + "此物品是稀有掉落自",
-            Theme.PASSIVE + "紅石礦. 方塊必須實際上的打破",
-            Theme.PASSIVE + "不能有絲綢之觸.",
+            Theme.PASSIVE + "红石矿. 方块必须实际上的打破",
+            Theme.PASSIVE + "不能有精准采集.",
             "",
             Theme.LORE_TYPE_DROP
     );

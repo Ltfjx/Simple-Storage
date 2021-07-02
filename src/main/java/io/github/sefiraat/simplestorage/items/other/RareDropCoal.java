@@ -22,8 +22,8 @@ public final class RareDropCoal {
             Theme.ITEM_RARE_DROP + "稀有掉落: 煤炭",
             "",
             Theme.PASSIVE + "此物品是稀有掉落自",
-            Theme.PASSIVE + "煤礦. 方塊必須實際上的打破",
-            Theme.PASSIVE + "不能有絲綢之觸.",
+            Theme.PASSIVE + "煤矿. 方块必须实际上的打破",
+            Theme.PASSIVE + "不能有精准采集.",
             "",
             Theme.LORE_TYPE_DROP
     );

@@ -73,7 +73,7 @@ public class SimpleStorage extends AbstractAddon {
     @Override
     protected @Nonnull
     String getGithubPath() {
-        return "xMikux/Simple-Storage/master";
+        return "Ltfjx/Simple-Storage/master";
     }
 
     private void setupSlimefun() {
